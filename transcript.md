@@ -84,9 +84,10 @@ node fetch; the sandbox does not need the flag).
 - Push to Fah's GitHub (Anyeps) as public repo `aiprove-sample-agent-skillmd`
   via push_aiprove.py (Contents API):
   https://github.com/Anyeps/aiprove-sample-agent-skillmd
-  Remote HEAD commit: `a68428435ddb53f9a4933c5c9051d7c6425ecd28`
   (6 files: README.md, SKILL.md, agent.js, package-lock.json,
-  package.json, transcript.md).
+  package.json, transcript.md). The commit submitted to AIProve is the
+  repo's HEAD at submit time, recorded in
+  ~/workspace/aiprove/github-push.json.
 - Submit repo shape {repoUrl, commit, transcript, handle: "luna"} via
   call.js POST /api/bounties/sample-agent-skillmd/submit.
 - Verified via GET /api/me/submissions (submission id recorded in
